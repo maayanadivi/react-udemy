@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
-import ComponentA from "./ComponentA";
-export const NameContext = React.createContext();
+import Counter from "./components/Counter";
 function App() {
   return (
     <div className="App">
-      <NameContext.Provider value={"maayan"}>
-        <ComponentA />
-      </NameContext.Provider>
+      <Counter />
     </div>
   );
 }
